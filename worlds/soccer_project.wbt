@@ -1,0 +1,82 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/robotis/darwin-op/protos/RobotisOp2.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/robotis/darwin-op/protos/RobotisJersey.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/robotstadium/protos/RobotstadiumSoccerField.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/balls/protos/Ball.proto"
+
+WorldInfo {
+  info [
+    "ROBOTIS OP2 robot."
+    "The ROBOTIS OP2 robot simulation model can be programmed using the ROBOTIS OP2 motions files and the ROBOTIS OP2 walk control library."
+  ]
+  title "ROBOTIS OP2"
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.24348900933297107 -0.41121537706120354 0.87841619748412 5.096965946242367
+  position -4.503756852780689 8.563053365548155 6.180917953482146
+  follow "ROBOTIS OP2"
+}
+TexturedBackground {
+  texture "noon_cloudy_countryside"
+  luminosity 1.5
+}
+TexturedBackgroundLight {
+  texture "noon_cloudy_countryside"
+  luminosity 0.5
+}
+DEF ROBOTISOP2 RobotisOp2 {
+  hidden position_0_0 0.05800679484669598
+  hidden position_0_1 -0.03422399337317008
+  hidden position_0_2 0.03424193432270071
+  hidden position_0_3 0.7218610362710951
+  hidden position_0_4 -0.8447437901016184
+  hidden rotation_10 0.555094745332638 0.588163321935482 0.5881613132754586 2.1282058986509416
+  hidden position_10_0 -0.34990793317797125
+  hidden rotation_11 1 0 0 1.1353079331779687
+  hidden rotation_15 0.564184605496371 0.5838218438723503 0.5838217069777325 2.1142853762563343
+  hidden position_15_0 0.008737699304252656
+  hidden rotation_16 0 0 -1 0.008737699304238464
+  hidden position_16_0 0.5525741237793449
+  hidden rotation_17 -1 0 0 0.5525741237793445
+  hidden position_17_0 -0.7778872950608072
+  hidden rotation_18 1 0 0 0.7778872950608073
+  hidden position_18_0 -0.4507580087997481
+  hidden rotation_19 -1 0 0 0.4507580087997478
+  hidden position_19_0 0.07991383279194655
+  hidden rotation_20 0 0 1 0.07991383279194804
+  hidden rotation_21 0.5905051869670579 0.5706592092690193 0.5706589971615778 2.0747609024073403
+  hidden position_21_0 0.0827842422510345
+  hidden rotation_22 0 0 -1 0.08278424225103446
+  hidden position_22_0 -0.7779651888231037
+  hidden rotation_23 -0.9999999999999999 0 0 0.777965188823104
+  hidden position_23_0 1.2253148646364527
+  hidden rotation_24 1 0 0 1.2253148646364524
+  hidden position_24_0 0.6733706536686056
+  hidden rotation_25 -1 0 0 0.6733706536686054
+  hidden position_25_0 0.13860510902254294
+  hidden rotation_26 0 0 1 0.13860510902254344
+  hidden rotation_27 0.6735478578812598 0.6735478275507821 0.3044119037508029 2.550653352824317
+  hidden position_27_0 0.30717937670907947
+  hidden rotation_28 0 0 1 0.47822062329091647
+  hidden position_28_0 -0.5160629140460453
+  hidden rotation_29 -1 0 0 2.086862914046045
+  hidden rotation_30 0.682909406656739 0.6829095468934224 0.25936324539448685 2.633938798770021
+  hidden position_30_0 -0.31178654595875854
+  hidden rotation_31 0 0 -1 0.4736134540412385
+  hidden position_31_0 0.5114453281617211
+  hidden rotation_32 -1 0 0 2.08224532816172
+  translation -0.107764 0.0370146 0.330692
+  rotation 0.3128459762431031 0.47312796407160995 -0.8235759374592927 0.238963
+  controller "soccerproject"
+  jersey RobotisJersey {
+  }
+}
+RobotstadiumSoccerField {
+}
+Ball {
+  translation 0 0 0.0325
+}
